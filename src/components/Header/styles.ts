@@ -1,12 +1,23 @@
+import {CaretLeftIcon} from
 import styled from "styled-components/native";
 
 export const Container = styled.View`
     width: 100%;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     `
+
 export const Logo = styled.Image`
     width: 46px;
     height: 55px;
 `
+
+    export const Backicon = styled(CaretLeftIcon).attrs(({ theme }) => ({
+    size: 32,
+    color: theme.COLORS.WHITE
+    }))``
+
+    export const BackButton = styled.TouchableOpacity`
+    flex: 1;
+    `
